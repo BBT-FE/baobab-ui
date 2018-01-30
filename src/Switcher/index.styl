@@ -1,0 +1,52 @@
+.Switcher {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 60px;
+  height: 30px;
+  padding: 2px;
+  border-radius: 100px;
+  transition: all .2s linear;
+}
+
+.Switcher.Switcher--noText {
+  width: 52px;
+  height: 30px;
+  padding: 0;
+}
+
+.Switcher--slider {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: all .2s linear;
+}
+
+.Switcher.Switcher--noText .Switcher--slider {
+  width: 28px;
+  height: 28px;
+  left: 1px;
+  top: 1px;
+}
+
+.Switcher--text {
+  float: left;
+  width: 50%;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.Switcher--open {
+  transform: translateX(30px);
+}
+
+.Switcher.Switcher--noText .Switcher--open {
+  transform: translateX(22px);
+}

@@ -1,0 +1,46 @@
+.B-TextArea {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 12px 14px;
+}
+
+.B-TextArea.B-TextArea-title {
+  flex-direction: row;
+}
+
+.B-TextArea--hd {
+  width: 51px;
+  span {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+  }
+  word-wrap: break-word; // 允许长单词换到下一行
+  word-break: break-all; // 折行方式
+}
+
+.B-TextArea--bd {
+  flex: 1;
+  textarea {
+    display: block
+    resize: none;
+    outline: 0;
+    border: 0;
+    width: 100%;
+    font-size: inherit; // 从父元素继承
+    color: #333;
+    line-height: inherit;
+  }
+}
+
+.B-TextArea--bd-max {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 12px;
+  color: #bdbdbd;
+}
+
+.startInput {
+  color: #333;
+}

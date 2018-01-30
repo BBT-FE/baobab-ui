@@ -1,0 +1,65 @@
+$height = 20px
+
+::-webkit-input-placeholder {
+  color: #bdbdbd;
+}
+
+.text-input {
+  display: flex;
+  width: 100%;
+  height: $height;
+  // font-size: 0;
+  input {
+    -webkit-appearance: none; // 移除原生样式
+    outline: none;
+    border: 0;
+    width: 100%;
+    height: $height;
+    padding: 0;
+    border-radius: 0;
+    font-size: 14px;
+    color: #333;
+    line-height: $height;
+    font-family: sans-serif;
+    background-color: #fff;
+  }
+}
+
+.text-input--iconBox {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.text-input-del {
+  display: inline-block;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  background-color: #cacaca;
+  border-radius: 50%;
+  transform: rotate(45deg);
+  &:before {
+    position: absolute;
+    content: ""
+    width: 9px;
+    height: 1px;
+    background-color: #fff;
+    left: 3px;
+    top: 7px;
+  }
+
+  &:after {
+    position: absolute;
+    content: ""
+    width: 1px;
+    height: 9px;
+    background-color: #fff;
+    left: 7px;
+    top: 3px;
+  }
+}
+
+.text-input-del.text-input--warn {
+  background-color: #FC5E61;
+}

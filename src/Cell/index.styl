@@ -1,0 +1,46 @@
+.Cell {
+	display: flex;
+	min-height: 50px;
+	padding: 0 14px;
+	box-sizing: border-box;
+	position: relative;
+	align-items: center;
+}
+
+.Cell--hd {
+	flex: 1;
+	font-size: 16px;
+	min-width: 64px;
+}
+
+.Cell--bd {
+	overflow: hidden;
+	padding-left: 5px;
+	word-break: break-all; // 换行
+	font-size: 14px;
+	color: #999;
+	margin-right: 5px;
+}
+
+.Cell--icon {
+	width: 16px;
+	height: 16px;
+	padding-right: 6px;
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.Cell--arrow {
+	display: block;
+	width: 8px;
+	height: 8px;
+	border-right-color: #cacaca;
+	border-bottom-color: #cacaca;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	transform: rotate(-45deg);
+}

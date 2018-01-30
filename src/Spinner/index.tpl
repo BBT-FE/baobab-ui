@@ -1,0 +1,1 @@
+<div class="Spinner" :style="style"></div>

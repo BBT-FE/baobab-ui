@@ -1,0 +1,73 @@
+{
+  "name": "baobab-ui",
+  "version": "1.0.0",
+  "description": "BBT内部组件库-基于vue2.0的UI组件库",
+  "main": "lib/baobab-ui.js",
+  "directories": {
+    "example": "example",
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "node ./example/server.js",
+    "build:demo": "rm -rf ./docs/demo && node example/build.js",
+    "build": "rm -rf ./lib && node ./webpack.config.js",
+    "lint": "eslint --ext .js,.vue src",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@gitlab.ops.heptagram.tech:2222/FE/Libs/baobab-ui.git"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "keywords": [
+    "UI"
+  ],
+  "author": "BBT-前端组",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^7.2.4",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "css-loader": "^0.28.8",
+    "cz-conventional-changelog": "^2.1.0",
+    "eslint": "^4.15.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "eslint-plugin-vue": "^4.2.0",
+    "eslint-plugin-vue-libs": "^2.1.0",
+    "eslint-plugin-vuefix": "^0.2.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "fastclick": "^1.0.6",
+    "file-loader": "^1.1.6",
+    "html-webpack-plugin": "^2.30.1",
+    "inline-manifest-webpack-plugin": "^3.0.1",
+    "postcss-loader": "^2.0.10",
+    "pre-commit": "^1.2.2",
+    "style-loader": "^0.19.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
+    "url-loader": "^0.6.2",
+    "vue": "^2.5.13",
+    "vue-loader": "^13.7.0",
+    "vue-markdown-loader": "^2.3.0",
+    "vue-router": "^3.0.1",
+    "vue-template-compiler": "^2.5.13",
+    "vue-template-loader": "^0.3.1",
+    "webpack": "^3.10.0",
+    "webpack-chunk-hash": "^0.5.0",
+    "webpack-dev-server": "^2.10.1"
+  },
+  "dependencies": {},
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

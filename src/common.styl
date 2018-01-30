@@ -1,0 +1,79 @@
+// 颜色
+
+
+.baobab-border-top {
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1px solid #e6e6e6;
+    transform: scaleY(0.5);
+    transform-origin: left top;
+  }
+}
+
+.baobab-border-bottom {
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1px solid #e6e6e6;
+    transform: scaleY(0.5);
+    transform-origin: left bottom;
+  }
+}
+
+// 组件动画
+
+
+/*由下到上*/
+.baobab--anim--bottomUp-enter-active,
+.baobab--anim--bottomUp-leave-active {
+  transition: transform .3s;
+}
+
+.baobab--anim--bottomUp-enter,
+.baobab--anim--bottomUp-leave-active {
+  transform: translateY(100%);
+}
+
+/*由上到下*/
+.baobab--anim--topDown-enter-active,
+.baobab--anim--topDown-leave-active {
+  transition: transform .3s;
+}
+
+.baobab--anim--topDown-enter,
+.baobab--anim--topDown-leave-active {
+  transform: translateY(-100%);
+}
+
+/*淡入*/
+.baobab--anim--fade-enter-active,
+.baobab--anim--fade-leave-active {
+  transition: opacity .3s;
+}
+
+.baobab--anim--fade-enter,
+.baobab--anim--fade-leave-active {
+  opacity: 0;
+}
+
+
+/*缩放*/
+
+.baobab-anim-scale-enter-active,
+.baobab-anim-scale-leave-active {
+  transition: transform .3s;
+}
+
+.baobab-anim-scale-enter,
+.baobab-anim-scale-leave-active {
+  transform: scale(1.1);
+}

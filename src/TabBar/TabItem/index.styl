@@ -1,0 +1,53 @@
+.TabItem {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-item: center;
+  height: 49px;
+  color: #999;
+}
+
+.TabItem--main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-item: center;
+  font-size: 10px;
+  .TabItem--icon {
+    position: relative;
+    text-align: center;
+    height: 20px;
+    padding-bottom: 2px;
+    img {
+      height: 100%;
+    }
+  }
+}
+
+.TabItem.selected {
+  color: #3E81F1;
+}
+
+.TabItem--title {
+  position: relative;
+}
+
+.TabItem--title.TabItem--noIcon {
+  font-size: 14px;
+}
+
+.TabItem--badge {
+  position: absolute;
+  left: 18px;
+  bottom: 11px;
+}
+
+.TabItem--badge--noIcon {
+  position: absolute;
+  left: 25px;
+  bottom: 11px;
+}
+
+.TabItem--disabled {
+  color: #E6E6E6;
+}

@@ -1,0 +1,1 @@
+<span :style="{backgroundColor: bgColor}" class="Badge" :class="{'Badge--single': tipNum !== undefined && tipNum.toString().length === 1, 'Badge--dot': tipNum === undefined || tipNum === ''}">{{tipNum}}</span>

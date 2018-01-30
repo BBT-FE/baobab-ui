@@ -1,0 +1,147 @@
+.Toast {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0 40px;
+  box-sizing: border-box;
+}
+
+.Toast.top {
+  align-items: flex-start;
+}
+
+.Toast.bottom {
+  align-items: flex-end;
+}
+
+.Toast.center {
+  align-items: center;
+}
+
+.Toast--main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 24px 20px;
+  background-color: #333;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.Toast--main.onlyText {
+  width: 280px;
+  padding: 14px 0;
+  border-radius: 2px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.Toast--icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+
+.Toast--main.wifi .Toast--icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 0;
+  border: 0;
+}
+
+.Toast--main.loadingB .Toast--icon {
+  border-radius: 0;
+  border: 0;
+}
+
+.Toast--main.loadingA .Toast--icon {
+  border-radius: 0;
+  border: 0;
+  margin-bottom: 0;
+}
+
+.Toast--icon i.icon--success {
+  position: absolute;
+  left: 8px;
+  top: 9px;
+  width: 20px;
+  height: 10px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-right: 0;
+  border-top: 0;
+  transform: rotate(-45deg);
+}
+
+.Toast--icon i.icon--failure {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: rotate(45deg);
+}
+
+.Toast--icon i.icon--failure:before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width 19px;
+  background-color: #fff;
+  left: 9px;
+  top: 18px;
+}
+
+.Toast--icon i.icon--failure:after {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width 1px;
+  background-color: #fff;
+  left: 18px;
+  top: 9px;
+}
+
+.Toast--icon i.icon--wifi {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: url(../wifi.svg) no-repeat;
+  background-position: center;
+}
+
+.Toast--icon i.icon--loadingA {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url(../loading-spinner.svg) no-repeat;
+  background-position: center;
+  background-size: 100%;
+  animation: loading 2.5s linear infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Toast--content {
+  color: #fff;
+  font-size: 16px;
+  line-height: 22px;
+}

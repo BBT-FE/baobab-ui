@@ -1,0 +1,71 @@
+.Dialog {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  width: 100%;
+  height: 100%;
+}
+
+.Dialog--main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.Dialog--bd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px 28px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.Dialog--title {
+  font-size: 16px;
+  color: #333;
+  line-height: 1;
+}
+
+.Dialog--content {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #666;
+}
+
+.Dialog--buttons {
+  width: 100%;
+  .Dialog--button {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    height: 43px;
+    line-height: 43px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+}
+
+.Dialog--separator .Dialog--button:nth-child(1) {
+  border-right: 1px solid #e6e6e6;
+}
+
+.Dialog--separator .Dialog--button:nth-child(2) {
+  background-color: #F6F6F6;
+  color: #3E81F1;
+}
+
+.Dialog--prompt {
+  width: 100%;
+  border: 1px solid #ccc;
+  height: 25px;
+  outline: none;
+}

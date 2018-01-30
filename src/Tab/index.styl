@@ -1,0 +1,49 @@
+.Tab-Plugin {
+  position: relative;
+  display: flex;
+  width: 100%;
+
+  &.overflow-style {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .tab-item-wrapper {
+    flex: 1;
+    text-align: center;
+
+    &.overflow-style {
+      display: inline-block;
+      width: 100px;
+    }
+
+    .tab-item {
+      display:inline-block;
+      position: relative;
+      padding: 15px 3px;
+      font-size: 14px;
+
+      .badge--wrapper {
+        position: absolute;
+        right: -8px;
+        top: 2px;
+      }
+
+      &.isActive {
+        border-bottom 2px solid #3E81F1;
+        color: #3E81F1;
+      }
+
+      &.isChangeColor {
+        border-color: #ffffff;
+        color: #ffffff;
+      }
+    }
+
+  }
+}
