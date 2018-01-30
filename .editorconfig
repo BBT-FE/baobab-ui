@@ -1,0 +1,10 @@
+{
+	"root": true,
+	"indent_style": "tab",
+	"tab_size": 2,
+	"translate_tabs_to_spaces": true,
+	"charset": "utf-8",
+	"insert_final_newline": true,
+	"trim_trailing_whitespace": true,
+	"trim_trailing_white_space_on_save": true
+}
