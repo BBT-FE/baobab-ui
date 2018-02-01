@@ -1,11 +1,28 @@
 ## Baobab-UI
 
-基于 Vue2.0 的内部前端UI组件
+> 🚀  A lightweight, high quality component library based on Vue 2.x by BBT-FE https://BBT-FE.github.io/#/About
 
+## Links
+- [Demos](https://BBT-FE.github.io/#/Demos)
 
-## using
+## Example QR
 
+![Example QR](./assets/example-qr.png)
 
-## version
+## Install
+```
+npm install -g baobab-ui --save
+```
+or
 
-* current: v1.0
+```
+yarn add baobab-ui
+```
+
+## Usage
+```
+import Vue from 'vue'
+import BaobabUI from 'baobab-ui'
+import 'baobab-ui/lib/baobab-ui.css'
+Vue.use(BaobabUI)
+```

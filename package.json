@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "node ./example/server.js",
-    "build:demo": "rm -rf ./docs/demo && node example/build.js",
+    "build:demo": "rm -rf ./docs/demo/css && rm -rf ./docs/demo/js && rm -rf ./docs/demo/index.html && node example/build.js",
     "build": "rm -rf ./lib && node ./webpack.config.js",
     "lint": "eslint --ext .js,.vue src",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -w"

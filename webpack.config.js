@@ -56,7 +56,7 @@ const config = {
         test: /.styl$/,
         loader: ExtractTextPlugin.extract({
           use: ['css-loader?sourceMap', 'postcss-loader?sourceMap', 'stylus-loader?sourceMap']
-        })
+        }),
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
@@ -86,7 +86,15 @@ const config = {
       'process.env.NODE_ENV': 'production'
     }),
 
-    new ExtractTextPlugin('baobab-ui.css')
+    new ExtractTextPlugin('baobab-ui.css'),
+
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false
+      },
+      sourceMap: true,
+      minimize: true
+    })
   ]
 }
 
