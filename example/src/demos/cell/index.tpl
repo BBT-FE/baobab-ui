@@ -1,4 +1,4 @@
-<div class="cell">
+<div class="cell" style="padding-bottom: 20px;">
 
   <Cell title="基本用法" style="margin-top: 62px;"></Cell>
   <Cell title="显示图标">
@@ -16,6 +16,15 @@
   <Cell title="to属性支持外部链接" content="使用to属性跳转百度" to="https://www.baidu.com">
     <img src="../../../images/letter-b.svg" slot="icon">
   </Cell>
+
+  <CellGroup style="margin-top: 20px;">
+    <Cell title="栏目标题">
+      <div slot="body" class="cell--body" @click="select">
+        <span class="cell--body-desc" :class="{'cell--body-selectedDesc': selectDesc}">{{selectDesc || '请选择'}}</span>
+        <span class="cell--body-arrow"><i></i></span>
+      </div>
+    </Cell>
+  </CellGroup>
 
 
   <CellGroup style="margin-top: 20px;">
@@ -39,5 +48,10 @@
     <Cell title="栏目标题" arrow>
       <div slot="body" style="color: red">未开启</div>
     </Cell>
+  </CellGroup>
+
+  <CellGroup style="margin-top: 20px;">
+    <Cell title="栏目标题" content="18500323213"></Cell>
+    <Cell title="栏目标题" content="王重阳"></Cell>
   </CellGroup>
 </div>

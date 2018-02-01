@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@gitlab.ops.heptagram.tech:2222/FE/Libs/baobab-ui.git"
+    "url": "https://github.com/BBT-FE/Baobab-UI"
   },
   "pre-commit": [
     "lint"
@@ -24,7 +24,7 @@
   "keywords": [
     "UI"
   ],
-  "author": "BBT-前端组",
+  "author": "6379616e",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^7.2.4",
