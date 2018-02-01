@@ -17,9 +17,9 @@
     <img src="../../../images/letter-b.svg" slot="icon">
   </Cell>
 
-  <CellGroup style="margin-top: 20px;">
+  <CellGroup style="margin-top: 20px;" @click.native="select">
     <Cell title="栏目标题">
-      <div slot="body" class="cell--body" @click="select">
+      <div slot="body" class="cell--body">
         <span class="cell--body-desc" :class="{'cell--body-selectedDesc': selectDesc}">{{selectDesc || '请选择'}}</span>
         <span class="cell--body-arrow"><i></i></span>
       </div>
