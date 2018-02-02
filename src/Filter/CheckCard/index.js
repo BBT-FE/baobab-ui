@@ -14,6 +14,14 @@ const component = create({
     	type: [String, Number],
 		  required: true,
 		  validator: value => value >= 0
+	  },
+    topIndex: {
+    	type: [Number],
+	    default: null
+    },
+    mixed: {
+    	type: [Boolean],
+		  default: false
 	  }
   },
   data() {
@@ -27,7 +35,7 @@ const component = create({
   },
   watch: {
     selectedList(value) {
-	     this.$emit('onchange', { index: this.parentIndex, list: value || [] })
+	     this.$emit('onchange', { index: this.parentIndex, list: value || [], topIndex: this.topIndex || null })
     }
   },
   methods: {
@@ -64,7 +72,7 @@ const component = create({
 		  this.selectedList = []
 	  },
 	  confirm() {
-		  this.$emit('onconfirm', this.selectedList)
+		  this.$emit('onconfirm', { index: this.parentIndex, list: this.selectedList || [] })
 	  },
 	  sortForSe() {
 		  return (before, after) => {

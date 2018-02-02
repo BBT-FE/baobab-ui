@@ -4,7 +4,7 @@
       <div class="name--wrapper">{{each.name}}</div>
     </div>
   </div>
-  <div class="btn--wrapper">
+  <div class="btn--wrapper" :class="{'mixed': mixed}">
     <div class="btn">
       <Btn type="simple" radius="0px" @click="reset(index)" style="font-size: 16px">重置</Btn>
     </div>

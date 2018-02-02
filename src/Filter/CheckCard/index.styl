@@ -1,21 +1,22 @@
 .section--selected {
   display: flex;
-  padding: 20px 14px 24px;
+  padding: 10px 7px 12px;
   background-color: #ffffff;
+  z-index: 999;
   .section--item {
     padding: 12px 0px;
     margin: 1px;
     display: flex;
+    flex: 1;
     align-items: center;
     justify-content: center;
-    width: 82px;
+    min-width: 82px;
     margin-right: 6px;
     border: 1px solid #E6E6E6;
     border-radius: 2px;
     background: #FFFFFF;
     box-sizing: border-box;
     &.selected {
-      //margin: 0px 6px 0px 0px;
       border: 1px solid #3E81F1;
       border-radius: 2px;
       background-color: #F1F6FF;
@@ -27,6 +28,9 @@
     top: 100%;
     right: 0px;
     left: 0px;
+    &.mixed {
+     display: none;
+    }
     .btn {
       flex: 1;
     }

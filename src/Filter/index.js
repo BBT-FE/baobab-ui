@@ -33,10 +33,11 @@ const component = create({
   },
   data() {
     return {
-	    typeList: ['single', 'selection'],
+	    typeList: ['single', 'selection', 'mixed'],
       dataList: null,
       selectedList: [],
-      flag: false
+      style: {
+      }
     }
   },
   created() {
@@ -46,6 +47,16 @@ const component = create({
       one.list = []
       this.selectedList.push(one)
     })
+  },
+  mounted() {
+    let ele = this.$refs['wrapper']
+    let winHeight = window.outerHeight
+    let top = ele.offsetTop
+    let height = ele.clientHeight
+    let offset = winHeight - top - height
+    this.style = {
+      height: offset + 'px'
+    }
   },
   methods: {
     // filter titile clicked
@@ -57,12 +68,28 @@ const component = create({
       this.dataList[selectedIndex].selected = !flag
     },
     getSelected(value) {
-	    if (!this.flag) this.flag = true
 	    this.onSelect(value)
+    },
+    onsingleCheck(value) {
+      this.filterList[value.index].selected = false
+      this.selectedList[value.index].list = value.list
+      this.$emit('onchange', this.selectedList)
     },
     onSelect(value) {
       this.selectedList[value.index].list = value.list
-	    this.$emit('onchange', this.selectedList)
+    },
+	  onConfirm(value) {
+		  this.filterList[value.index].selected = false
+		  this.selectedList[value.index].list = value.list
+      this.$emit('onchange', this.selectedList)
+    },
+    onSelected(value) {
+      this.selectedList[value.topIndex].list[value.index] = value.list
+      // this.$emit('onchange', this.selectedList)
+    },
+    onEnsure(index) {
+      this.filterList[index].selected = false
+      this.$emit('onchange', this.selectedList)
     }
   }
 })
