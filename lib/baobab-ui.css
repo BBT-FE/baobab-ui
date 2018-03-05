@@ -801,6 +801,9 @@
   border-radius: 2px;
   background-color: #f1f6ff;
 }
+.section--selected .section--item:last-child {
+  margin-right: 0;
+}
 .section--selected .btn--wrapper {
   position: absolute;
   display: -webkit-box;
@@ -809,9 +812,6 @@
   top: 100%;
   right: 0px;
   left: 0px;
-}
-.section--selected .btn--wrapper.mixed {
-  display: none;
 }
 .section--selected .btn--wrapper .btn {
   -webkit-box-flex: 1;
