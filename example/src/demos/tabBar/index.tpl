@@ -1,7 +1,7 @@
 <div class="tab">
   <div class="tab--header">
     <div class="tab--header--hd">
-      <img src="../../../images/jay.jpeg" v-show="selectedB === 0">
+      <img src="../../../images/jay.jpg" v-show="selectedB === 0">
       <img src="../../../images/kunling.jpg" v-show="selectedB === 1">
     </div>
     <div class="tab--header--bd">
