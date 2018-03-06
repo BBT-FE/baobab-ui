@@ -18,6 +18,14 @@ const component = create({
     tintColor: {
       type: String,
       default: PRIMARY
+    },
+    selectedIndex: {
+      type: Number,
+      default: 0
+    },
+    fullBorder: {
+      type: Boolean,
+      default: false
     }
   },
   data() {
@@ -33,6 +41,7 @@ const component = create({
     }
   },
   created() {
+    this.activeIndex = this.selectedIndex <= this.tabList.length - 1 ? this.selectedIndex : 0
     if (this.tabList.length >= MAXLENTG) {
       this.isOverFlow = true
     }
