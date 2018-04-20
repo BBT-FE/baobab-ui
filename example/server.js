@@ -1,17 +1,15 @@
-var webpack = require('webpack')
-var WebpackDevServer = require('webpack-dev-server')
-var config = require('./base')
-var port = 8081
-var host = getIP()
-var localServer = `http://${host}:${port}`
+const webpack = require('webpack')
+const WebpackDevServer = require('webpack-dev-server')
+const config = require('./base')
+const os = require('os')
+const port = 8081
 
 function getIP() {
-  var os = require('os')
-  var IPv4 = '127.0.0.1'
-  var interfaces = os.networkInterfaces()
-  for (var key in interfaces) {
+  let IPv4 = '127.0.0.1'
+  let interfaces = os.networkInterfaces() // 返回对象, 包含被赋予网络地址的网络接口
+  for (let key in interfaces) {
     interfaces[key].some(function(details) {
-      if (details.family === 'IPv4' && key === 'en0') {
+      if (details.family == 'IPv4' && key == 'en8') {
         IPv4 = details.address
         return true
       }
@@ -20,13 +18,20 @@ function getIP() {
   return IPv4
 }
 
+const host = getIP()
+const localServer = `http://${host}:${port}`
 config.entry.app.unshift('webpack-dev-server/client?' + localServer)
-
-var compiler = webpack(config)
+const compiler = webpack(config)
 
 new WebpackDevServer(compiler, {
   contentBase: __dirname,
-  stats: { colors: true, chunks: false },
+  stats: {
+    colors: true,
+    modules: false,
+    chunks: false
+  },
   disableHostCheck: true
 })
-.listen(port)
+.listen(port, undefined, function() {
+  console.log(`\n ==> ${localServer} \n`)
+})

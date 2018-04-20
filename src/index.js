@@ -78,5 +78,5 @@ export default {
     Vue.prototype.$loading = Loading.install(Vue)
   },
 
-  version: 'v1.0.0'
+  version: require('../package.json').version
 }

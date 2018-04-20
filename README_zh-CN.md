@@ -2,24 +2,24 @@
 
 > 🚀  A lightweight, high quality component library based on Vue 2.x by BBT-FE https://BBT-FE.github.io/#/About
 
-## Links
-- [Demos](https://BBT-FE.github.io/#/Demos)
+## 导航
+- [示例](https://BBT-FE.github.io/#/Demos)
 
-## Example QR
+## 示例二维码
 
 ![Example QR](./assets/example-qr.png)
 
-## Install
+## 安装
 ```
 npm install -g baobab-ui --save
 ```
-or
+或者
 
 ```
 yarn add baobab-ui
 ```
 
-## Usage
+## 使用
 ```
 import Vue from 'vue'
 import BaobabUI from 'baobab-ui'
@@ -31,7 +31,7 @@ Vue.use(BaobabUI)
 - [ ] 更多组件
 - [ ] 主题支持
 
-## Development
+## 自定义开发
 ```
 git clone git@github.com:BBT-FE/Baobab-UI.git
 cd Baobab-UI
@@ -39,8 +39,8 @@ yarn install
 yarn start
 ```
 
-> - Entry src catalogue to develop
-  - The purpose of the example catalogue is to preview
+> - 进入src目录进行开发
+  - example目录进行预览
 
-## ChangeLog
-Detailed changes for each release are documented in the [release notes](https://github.com/BBT-FE/Baobab-UI/releases).
+## 发布日志
+发布详情请点击[发布日志](https://github.com/BBT-FE/Baobab-UI/releases)
