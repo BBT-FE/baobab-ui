@@ -1,6 +1,6 @@
 {
   "name": "baobab-ui",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "BBT内部组件库-基于vue2.0的UI组件库",
   "main": "lib/baobab-ui.js",
   "directories": {
