@@ -61,6 +61,10 @@ const component = create({
     // 同步输入的数据
     val(newVal) {
       this.$emit('input', newVal)
+    },
+
+    value(newVal) {
+      this.val = newVal
     }
   },
 

@@ -4,7 +4,7 @@ import './index.styl'
 export default create({
   data() {
     return {
-      val1: '基本使用',
+      val1: '',
       val2: '带标题',
       val3: '不显示计数器',
       val4: '触发焦点事件',
@@ -17,5 +17,11 @@ export default create({
     onEvent(event) {
       console.log('on', event)
     }
+  },
+
+  created () {
+    setTimeout(() => {
+      this.val1 = '基本使用'
+    }, 4000)
   }
 })
