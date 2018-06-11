@@ -5,24 +5,22 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 const config = {
 
-  context: __dirname, // entry配置项的根目录(绝对路径)
+  context: __dirname,
 
-  devtool: 'source-map', // 本地开发调试工具, 产生.map文件, 使得原始代码和运行时代码产生映射关系, 类似的eval包裹代码块\
+  devtool: 'source-map',
 
-  // 入口文件配置
   entry: {
     index: './src/index.js'
   },
 
-  // 输出文件配置
   output: {
-    path: path.resolve(__dirname, './lib'), // 输出地址
-    filename: 'baobab-ui.js', // 指定输出后的文件名
-    library: 'baobab-ui', // 指定库的名称
-    libraryTarget: 'umd' // 指定库的模块输出类型
+    path: path.resolve(__dirname, './lib'),
+    filename: 'baobab-ui.js',
+    library: 'baobab-ui',
+    libraryTarget: 'umd'
   },
 
-  externals: { // 依旧可以通过AMD、CMD等模块化引入方式对未被webpack处理的第三方库进行引用
+  externals: {
     vue: {
       commonjs: 'vue',
       commonjs2: 'vue',

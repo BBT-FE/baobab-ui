@@ -6,7 +6,7 @@ const port = 8081
 
 function getIP() {
   let IPv4 = '127.0.0.1'
-  let interfaces = os.networkInterfaces() // 返回对象, 包含被赋予网络地址的网络接口
+  let interfaces = os.networkInterfaces()
   for (let key in interfaces) {
     interfaces[key].some(function(details) {
       if (details.family == 'IPv4' && key == 'en8') {
