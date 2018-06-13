@@ -29,8 +29,11 @@ export default create({
     }
   },
   methods: {
-    del(el) {
-      console.log(el.dataset.id)
+    delbtns(list, index) {
+      alert(1)
+      if (index === 1) {
+        this.lists.splice(index, 1)
+      }
     }
   }
 })
