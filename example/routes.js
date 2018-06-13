@@ -10,7 +10,6 @@ import Router from 'vue-router'
 import About from './src/about'
 import Demos from './src/demos'
 
-
 /*
  * 例子展示
  */
@@ -21,6 +20,7 @@ import RadioExample from './src/demos/radio'
 import LoadingExample from './src/demos/loading'
 import LoadmoreExample from './src/demos/loadmore'
 import SwitcherExample from './src/demos/switcher'
+import SlideOuter from './src/demos/slideOuter'
 
 // 标签栏相关示例
 import TabBarExample from './src/demos/tabBar'
@@ -48,8 +48,6 @@ import SpinnerExample from './src/demos/spinner'
 
 // 按钮相关示例
 import ButtonExample from './src/demos/button'
-
-
 
 Vue.use(Router)
 
@@ -179,6 +177,12 @@ const routes = [
   {
     path: '/Loadmore-Example',
     component: LoadmoreExample
+  },
+
+  // SlideOuter
+  {
+    path: '/SlideOuter-Example',
+    component: SlideOuter
   }
 ]
 

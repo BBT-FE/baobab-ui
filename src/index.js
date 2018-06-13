@@ -6,6 +6,8 @@ import RadioGroup from './Radio/Radio-Group'
 import Switcher from './Switcher'
 import Loading from './Loading'
 import Loadmore from './Loadmore'
+import SlideOuter from './SlideOuter'
+import SlideOuterItem from './SlideOuter/SlideOuterItem'
 
 // 标签栏相关
 import TabBar from './TabBar'
@@ -62,7 +64,9 @@ const components = [
   Toast,
   Popup,
   Loading,
-  Loadmore
+  Loadmore,
+  SlideOuter,
+  SlideOuterItem
 ]
 
 // install方法将所有组件全局注册
