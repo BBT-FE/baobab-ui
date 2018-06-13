@@ -55,6 +55,7 @@ const component = create({
     end() {
       // 自动布置
       let moveX = -this.translate > 30 ? -this.btnWidth : 0
+      // 滑动停止之前将speed置为0
       this.speed = 300
       this.translate = moveX
     },

@@ -1,4 +1,4 @@
-<div class="RadioGroup">
+<div class="baobab-radioGroup">
   <slot>
     <Radio
       v-for="(option, index) in options"

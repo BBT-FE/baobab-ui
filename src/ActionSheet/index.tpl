@@ -1,10 +1,10 @@
 <Modal v-model="visible" bgColor="rgba(0, 0, 0, .6)" anim="fade" zIndex="zIndex" :dismissOnClick="true">
   <transition name="baobab--anim--bottomUp">
-    <div class="ActionSheet" v-show="visible">
-      <div class="ActionSheet--title" v-if="title">{{title}}</div>
-      <div class="ActionSheet--options">
+    <div class="baobab-actionSheet" v-show="visible">
+      <div class="baobab-actionSheet--title" v-if="title">{{title}}</div>
+      <div class="baobab-actionSheet--options">
         <div
-          class="ActionSheet--option baobab-border-top"
+          class="baobab-actionSheet--option baobab-border-top"
           v-for="(opt, i) in options"
           :style="{color: getFontColor(opt)}"
           @click="handleClick(i)"
@@ -13,7 +13,7 @@
         </div>
       </div>
       <div
-        class="ActionSheet--option ActionSheet--cancel"
+        class="baobab-actionSheet--option baobab-actionSheet--cancel"
         :style="{color: tintColor}"
         @click="hide"
         v-if="hideCancel == false"

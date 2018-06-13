@@ -7,6 +7,7 @@
     <Cell title="Switcher" to="/Switcher-Example"></Cell>
     <Cell title="Loading" to="/Loading-Example"></Cell>
     <Cell title="Loadmore" to="/Loadmore-Example"></Cell>
+    <Cell title="SlideOuter" to="/SlideOuter-Example"></Cell>
   </CellGroup>
 
   <p class="component-wrapper">标签栏相关</p>
@@ -29,11 +30,11 @@
     <Cell title="Field" to="/Field-Example"></Cell>
   </CellGroup>
 
-  <p class="component-wrapper">筛选卡相关</p>
+  <!-- <p class="component-wrapper">筛选卡相关</p>
   <CellGroup>
     <Cell title="Filter" to="/Filter-Example">
     </Cell>
-  </CellGroup>
+  </CellGroup> -->
 
   <p class="component-wrapper">弹出框相关</p>
   <CellGroup>

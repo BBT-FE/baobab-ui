@@ -1,6 +1,6 @@
 <transition :name="animName">
 	<div
-	class="Modal"
+	class="baobab-modal"
   ref="modal"
 	:style="{'backgroundColor': bgColor, 'zIndex': zIndex}"
 	v-show="visible"

@@ -1,1 +1,1 @@
-<div class="Spinner" :style="style"></div>
+<div class="baobab-spinner" :style="style"></div>

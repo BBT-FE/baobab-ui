@@ -24,9 +24,9 @@ import Field from './Field'
 import Textareaer from './Textareaer'
 
 // 筛选卡相关
-import Filter from './Filter'
-import SingleCard from './Filter/SingleCard'
-import CheckCard from './Filter/CheckCard'
+// import Filter from './Filter'
+// import SingleCard from './Filter/SingleCard'
+// import CheckCard from './Filter/CheckCard'
 
 // 弹出层相关
 import Modal from './Modal'
@@ -53,9 +53,9 @@ const components = [
   Button,
   Spinner,
   // some component belong filter
-  Filter,
-  SingleCard,
-  CheckCard,
+  // Filter,
+  // SingleCard,
+  // CheckCard,
   Textareaer,
   TextInput,
   Radio,

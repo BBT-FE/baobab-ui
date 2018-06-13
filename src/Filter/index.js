@@ -25,12 +25,14 @@ import './index.styl'
 
 const component = create({
   name: 'FilterCard',
+
   props: {
     filterList: {
       type: Array,
       default: []
     }
   },
+
   data() {
     return {
 	    typeList: ['single', 'selection', 'mixed'],

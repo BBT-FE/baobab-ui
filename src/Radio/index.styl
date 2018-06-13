@@ -1,11 +1,11 @@
-.Radio {
+.baobab-radio {
   position: relative;
   background-color: #fff;
   box-sizing: border-box;
   overflow: hidden;
 }
 
-.Radio--wrap {
+.baobab-radio--wrap {
   position: relative;
   display: flex;
   align-items: center;
@@ -13,7 +13,7 @@
   min-height: 50px;
 }
 
-.Radio--wrap input[type=radio] {
+.baobab-radio--wrap input[type=radio] {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -21,35 +21,35 @@
   background-color: transparent;
 }
 
-.Radio--icon {
+.baobab-radio--icon {
   position: absolute;
   right: 15px;
   width: 20px;
   height: 20px;
 }
 
-.Radio--icon.position {
+.baobab-radio--icon.position {
   left: 0;
 }
 
-.Radio--icon-normal {
+.baobab-radio-icon--normal {
   border-radius: 50%;
   border: 1px solid #cacaca;
   transition: all .2s;
 }
 
-.Radio--icon-normal.selected {
+.baobab-radio-icon--normal.selected {
   display: flex;
   justify-content: center;
   background-color: #3E81F1;
   border: 1px solid transparent;
 }
 
-.Radio--icon-normal.disabled {
+.baobab-radio-icon--normal.disabled {
   background-color: #ccc;
 }
 
-.Radio--icon-normal.selected i {
+.baobab-radio-icon--normal.selected i {
   position: absolute;
   top: 4px;
   display: flex;
@@ -62,7 +62,7 @@
   transform: rotate(-45deg);
 }
 
-.Radio--icon-check.selected i {
+.baobab-radio-icon--check.selected i {
   position: absolute;
   top: 4px;
   display: flex;
@@ -75,13 +75,13 @@
   transform: rotate(-45deg);
 }
 
-.Radio--label {
+.baobab-radio--label {
   position: absolute;
   left: 0;
   font-size: 16px;
   color: #333;
 }
 
-.Radio--label.position {
+.baobab-radio--label.position {
   left: 30px;
 }

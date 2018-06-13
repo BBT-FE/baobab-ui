@@ -1,4 +1,4 @@
-.Toast {
+.baobab-toast {
   position: fixed;
   top: 0;
   left: 0;
@@ -11,19 +11,19 @@
   box-sizing: border-box;
 }
 
-.Toast.top {
+.baobab-toast.top {
   align-items: flex-start;
 }
 
-.Toast.bottom {
+.baobab-toast.bottom {
   align-items: flex-end;
 }
 
-.Toast.center {
+.baobab-toast.center {
   align-items: center;
 }
 
-.Toast--main {
+.baobab-toast--main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,7 +34,7 @@
   box-sizing: border-box;
 }
 
-.Toast--main.onlyText {
+.baobab-toast--main.onlyText {
   width: 208px;
   padding: 14px 0;
   border-radius: 10px;
@@ -42,7 +42,7 @@
   word-wrap: break-word;
 }
 
-.Toast--icon {
+.baobab-toast--icon {
   position: relative;
   display: flex;
   align-items: center;
@@ -54,25 +54,25 @@
   height: 36px;
 }
 
-.Toast--main.wifi .Toast--icon {
+.baobab-toast--main.wifi .baobab-toast--icon {
   width: 40px;
   height: 40px;
   border-radius: 0;
   border: 0;
 }
 
-.Toast--main.loadingB .Toast--icon {
+.baobab-toast--main.loadingB .baobab-toast--icon {
   border-radius: 0;
   border: 0;
 }
 
-.Toast--main.loadingA .Toast--icon {
+.baobab-toast--main.loadingA .baobab-toast--icon {
   border-radius: 0;
   border: 0;
   margin-bottom: 0;
 }
 
-.Toast--icon i.icon--success {
+.baobab-toast--icon i.icon--success {
   position: absolute;
   left: 8px;
   top: 9px;
@@ -85,14 +85,14 @@
   transform: rotate(-45deg);
 }
 
-.Toast--icon i.icon--failure {
+.baobab-toast--icon i.icon--failure {
   position: absolute;
   width: 100%;
   height: 100%;
   transform: rotate(45deg);
 }
 
-.Toast--icon i.icon--failure:before {
+.baobab-toast--icon i.icon--failure:before {
   position: absolute;
   content: "";
   height: 1px;
@@ -102,7 +102,7 @@
   top: 18px;
 }
 
-.Toast--icon i.icon--failure:after {
+.baobab-toast--icon i.icon--failure:after {
   position: absolute;
   content: "";
   height: 18px;
@@ -112,7 +112,7 @@
   top: 9px;
 }
 
-.Toast--icon i.icon--wifi {
+.baobab-toast--icon i.icon--wifi {
   display: inline-block;
   width: 100%;
   height: 100%;
@@ -120,7 +120,7 @@
   background-position: center;
 }
 
-.Toast--icon i.icon--loadingA {
+.baobab-toast--icon i.icon--loadingA {
   display: inline-block;
   width: 32px;
   height: 32px;
@@ -140,7 +140,7 @@
   }
 }
 
-.Toast--content {
+.baobab-toast--content {
   padding-left: 20px;
   padding-right: 20px;
   color: #fff;

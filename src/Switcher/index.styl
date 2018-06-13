@@ -1,4 +1,4 @@
-.Switcher {
+.baobab-switcher {
   position: relative;
   display: flex;
   align-items: center;
@@ -10,13 +10,13 @@
   transition: all .2s linear;
 }
 
-.Switcher.Switcher--noText {
+.baobab-switcher.baobab-switcher--noText {
   width: 52px;
   height: 30px;
   padding: 0;
 }
 
-.Switcher--slider {
+.baobab-switcher--slider {
   position: absolute;
   left: 2px;
   top: 2px;
@@ -27,14 +27,14 @@
   transition: all .2s linear;
 }
 
-.Switcher.Switcher--noText .Switcher--slider {
+.baobab-switcher.baobab-switcher--noText .baobab-switcher--slider {
   width: 28px;
   height: 28px;
   left: 1px;
   top: 1px;
 }
 
-.Switcher--text {
+.baobab-switcher--text {
   float: left;
   width: 50%;
   text-align: center;
@@ -43,10 +43,10 @@
   color: #fff;
 }
 
-.Switcher--open {
+.baobab-switcher--open {
   transform: translateX(30px);
 }
 
-.Switcher.Switcher--noText .Switcher--open {
+.baobab-switcher.baobab-switcher--noText .baobab-switcher--open {
   transform: translateX(22px);
 }

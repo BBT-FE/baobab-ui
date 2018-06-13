@@ -1,6 +1,4 @@
-// 颜色
-
-
+// 上下边框
 .baobab-border-top {
   &:before {
     content: "";
@@ -31,6 +29,10 @@
 
 // 组件动画
 
+/*
+  进入开始   进入过渡结束     离开开始    离开过渡结束
+ enter -> enter-active -> leave -> leave-active
+*/
 
 /*由下到上*/
 .baobab--anim--bottomUp-enter-active,
@@ -64,7 +66,6 @@
 .baobab--anim--fade-leave-active {
   opacity: 0;
 }
-
 
 /*缩放*/
 
