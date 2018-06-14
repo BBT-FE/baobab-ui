@@ -7,7 +7,7 @@
     <Cell title="Switcher" to="/Switcher-Example"></Cell>
     <Cell title="Loading" to="/Loading-Example"></Cell>
     <Cell title="Loadmore" to="/Loadmore-Example"></Cell>
-    <Cell title="SlideOuter" to="/SlideOuter-Example"></Cell>
+    <Cell title="swipeOut" to="/swipeOut-Example"></Cell>
   </CellGroup>
 
   <p class="component-wrapper">标签栏相关</p>

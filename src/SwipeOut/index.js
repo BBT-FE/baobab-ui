@@ -12,7 +12,7 @@ const component = create({
 
   methods: {
     removeEle(el) {
-      this.$refs.slideOuter.removeChild(el)
+      this.$refs.swipeOut.removeChild(el)
       this.$emit('onremove', el)
     },
 

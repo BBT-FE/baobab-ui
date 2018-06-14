@@ -6,8 +6,8 @@ import RadioGroup from './Radio/Radio-Group'
 import Switcher from './Switcher'
 import Loading from './Loading'
 import Loadmore from './Loadmore'
-import SlideOuter from './SlideOuter'
-import SlideOuterItem from './SlideOuter/SlideOuterItem'
+import SwipeOut from './SwipeOut'
+import SwipeOutItem from './SwipeOut/SwipeOutItem'
 
 // 标签栏相关
 import TabBar from './TabBar'
@@ -65,8 +65,8 @@ const components = [
   Popup,
   Loading,
   Loadmore,
-  SlideOuter,
-  SlideOuterItem
+  SwipeOut,
+  SwipeOutItem
 ]
 
 // install方法将所有组件全局注册
