@@ -2,7 +2,7 @@ import create from './index.tpl'
 import './index.styl'
 
 const component = create({
-  name: 'SlideOuterItem',
+  name: 'SwipeOutItem',
 
   data() {
     return {

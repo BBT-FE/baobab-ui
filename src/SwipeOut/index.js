@@ -2,7 +2,7 @@ import create from './index.tpl'
 import './index.styl'
 
 const component = create({
-  name: 'SlideOuter',
+  name: 'SwipeOut',
 
   data() {
     return {
