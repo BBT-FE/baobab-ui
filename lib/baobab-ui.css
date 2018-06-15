@@ -317,7 +317,30 @@
 .Loadmore--desc {
   margin-left: 8px;
 }
-/*# sourceMappingURL=src/Loadmore/index.css.map */.TabBar {
+/*# sourceMappingURL=src/Loadmore/index.css.map */.baobab-swipe-out {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+/*# sourceMappingURL=src/SwipeOut/index.css.map */.baobab-swipe-out-item {
+  position: relative;
+}
+.baobab-swipe-out-item .baobab-swipe-out-item-btns {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+.baobab-swipe-out-item .baobab-swipe-out-item-btns .baobab-swipe-out-item-btn {
+  background-color: #f00;
+  color: #fff;
+  width: 100px;
+  text-align: center;
+}
+/*# sourceMappingURL=src/SwipeOut/SwipeOutItem/index.css.map */.TabBar {
   position: absolute;
   left: 0;
   bottom: 0;
