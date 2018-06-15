@@ -137,8 +137,6 @@
 .baobab-radio-icon--normal {
   border-radius: 50%;
   border: 1px solid #cacaca;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
 }
 .baobab-radio-icon--normal.selected {
   display: -webkit-box;
@@ -153,6 +151,10 @@
 .baobab-radio-icon--normal.disabled {
   background-color: #ccc;
 }
+.baobab-radio-icon--normal i {
+  -webkit-transform: rotate(-45deg) scale(0);
+          transform: rotate(-45deg) scale(0);
+}
 .baobab-radio-icon--normal.selected i {
   position: absolute;
   top: 4px;
@@ -165,8 +167,16 @@
   border-right: 1px solid transparent;
   border-bottom: 1px solid #fff;
   border-left: 1px solid #fff;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg) scale(1);
+          transform: rotate(-45deg) scale(1);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+.baobab-radio-icon--check i {
+  -webkit-transform: rotate(-45deg) scale(0);
+          transform: rotate(-45deg) scale(0);
 }
 .baobab-radio-icon--check.selected i {
   position: absolute;
@@ -180,8 +190,12 @@
   border-right: 1px solid transparent;
   border-bottom: 1px solid #3e81f1;
   border-left: 1px solid #3e81f1;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg) scale(1);
+          transform: rotate(-45deg) scale(1);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 .baobab-radio--label {
   position: absolute;
@@ -321,15 +335,15 @@
 .baobab-loadmore--desc {
   margin-left: 8px;
 }
-/*# sourceMappingURL=src/Loadmore/index.css.map */.baobab-slide-outer {
+/*# sourceMappingURL=src/Loadmore/index.css.map */.baobab-swipe-out {
   position: relative;
   width: 100%;
   overflow: hidden;
 }
-/*# sourceMappingURL=src/SlideOuter/index.css.map */.baobab-slide-outer-item {
+/*# sourceMappingURL=src/SwipeOut/index.css.map */.baobab-swipe-out-item {
   position: relative;
 }
-.baobab-slide-outer-item .baobab-slide-outer-item-btns {
+.baobab-swipe-out-item .baobab-swipe-out-item-btns {
   display: inline-block;
   position: absolute;
   top: 0;
@@ -338,13 +352,13 @@
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
 }
-.baobab-slide-outer-item .baobab-slide-outer-item-btns .baobab-slide-outer-item-btn {
+.baobab-swipe-out-item .baobab-swipe-out-item-btns .baobab-swipe-out-item-btn {
   background-color: #f00;
   color: #fff;
   width: 100px;
   text-align: center;
 }
-/*# sourceMappingURL=src/SlideOuter/SlideOuterItem/index.css.map */.TabBar {
+/*# sourceMappingURL=src/SwipeOut/SwipeOutItem/index.css.map */.TabBar {
   position: absolute;
   left: 0;
   bottom: 0;
