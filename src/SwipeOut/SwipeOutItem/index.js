@@ -18,8 +18,8 @@ const component = create({
   computed: {
     itemStyle() {
       return {
-        transition: `all ${this.speed}ms`,
-        transform: `translate3d(${this.translate}px, 0, 0)`
+        transition: `all ${this.speed}ms ease`,
+        transform: `translateX(${this.translate}px)`
       }
     }
   },
@@ -40,7 +40,7 @@ const component = create({
       this.moveX = moveX
       let moveY = e.touches[0].pageY - this.oldTouches.pageY
 
-      if (Math.abs(moveX) < Math.abs(moveY) || Math.abs(moveX) < 20 || Math.abs(moveY) > 30) return
+      if (Math.abs(moveX) < Math.abs(moveY) || Math.abs(moveX) < 30 || Math.abs(moveY) > 20) return
       e.preventDefault()
       this.$parent.$emit('resetItem', this)
       moveX = this.startX * 1 + moveX * 1
