@@ -133,8 +133,6 @@
 .Radio--icon-normal {
   border-radius: 50%;
   border: 1px solid #cacaca;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
 }
 .Radio--icon-normal.selected {
   display: -webkit-box;
@@ -145,6 +143,10 @@
           justify-content: center;
   background-color: #3e81f1;
   border: 1px solid transparent;
+}
+.Radio--icon-normal i {
+  -webkit-transform: rotate(-45deg) scale(0);
+          transform: rotate(-45deg) scale(0);
 }
 .Radio--icon-normal.disabled {
   background-color: #ccc;
@@ -161,8 +163,16 @@
   border-right: 1px solid transparent;
   border-bottom: 1px solid #fff;
   border-left: 1px solid #fff;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg) scale(1);
+          transform: rotate(-45deg) scale(1);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+.Radio--icon-check i {
+  -webkit-transform: rotate(-45deg) scale(0);
+          transform: rotate(-45deg) scale(0);
 }
 .Radio--icon-check.selected i {
   position: absolute;
@@ -176,8 +186,12 @@
   border-right: 1px solid transparent;
   border-bottom: 1px solid #3e81f1;
   border-left: 1px solid #3e81f1;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg) scale(1);
+          transform: rotate(-45deg) scale(1);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 .Radio--label {
   position: absolute;
