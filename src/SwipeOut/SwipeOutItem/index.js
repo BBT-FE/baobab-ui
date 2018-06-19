@@ -10,7 +10,8 @@ const component = create({
       translate: 0,
       startX: 0,
       oldTouches: null,
-      btnWidth: 0
+      btnWidth: 0,
+      moveX: 0
     }
   },
 
@@ -36,6 +37,7 @@ const component = create({
 
     move(e) {
       let moveX = e.touches[0].pageX - this.oldTouches.pageX
+      this.moveX = moveX
       let moveY = e.touches[0].pageY - this.oldTouches.pageY
 
       if (Math.abs(moveX) < Math.abs(moveY) || Math.abs(moveX) < 20 || Math.abs(moveY) > 30) return
@@ -55,6 +57,9 @@ const component = create({
     end() {
       // 自动布置
       let moveX = -this.translate > 30 ? -this.btnWidth : 0
+      if (this.moveX > 0) {
+        moveX = 0
+      }
       // 滑动停止之前将speed置为0
       this.speed = 300
       this.translate = moveX
