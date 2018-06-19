@@ -35,7 +35,7 @@
 .Radio--icon-normal {
   border-radius: 50%;
   border: 1px solid #cacaca;
-  transition: all .2s;
+  // transition: all .2s;
 }
 
 .Radio--icon-normal.selected {
@@ -43,6 +43,10 @@
   justify-content: center;
   background-color: #3E81F1;
   border: 1px solid transparent;
+}
+
+.Radio--icon-normal i {
+  transform: rotate(-45deg) scale(0);
 }
 
 .Radio--icon-normal.disabled {
@@ -59,7 +63,12 @@
   border-right: 1px solid transparent;
   border-bottom: 1px solid #fff;
   border-left: 1px solid #fff;
-  transform: rotate(-45deg);
+  transform: rotate(-45deg) scale(1);
+  transition: transform .2s;
+}
+
+.Radio--icon-check i {
+  transform: rotate(-45deg) scale(0);
 }
 
 .Radio--icon-check.selected i {
@@ -72,7 +81,8 @@
   border-right: 1px solid transparent;
   border-bottom: 1px solid #3E81F1;
   border-left: 1px solid #3E81F1;
-  transform: rotate(-45deg);
+  transform: rotate(-45deg) scale(1);
+  transition  transform .2s;
 }
 
 .Radio--label {
