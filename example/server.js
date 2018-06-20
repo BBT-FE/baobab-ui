@@ -9,7 +9,7 @@ function getIP() {
   let interfaces = os.networkInterfaces()
   for (let key in interfaces) {
     interfaces[key].some(function(details) {
-      if (details.family == 'IPv4' && key == 'en8') {
+      if (details.family == 'IPv4' && key == 'en0') {
         IPv4 = details.address
         return true
       }
