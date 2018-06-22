@@ -148,11 +148,11 @@
   background-color: #3e81f1;
   border: 1px solid transparent;
 }
-.Radio--icon-normal i {
+.baobab-radio-icon--normal i {
   -webkit-transform: rotate(-45deg) scale(0);
           transform: rotate(-45deg) scale(0);
 }
-.Radio--icon-normal.disabled {
+.baobab-radio-icon--normal.disabled {
   background-color: #ccc;
 }
 .baobab-radio-icon--normal i {
@@ -178,7 +178,7 @@
   transition: transform 0.2s;
   transition: transform 0.2s, -webkit-transform 0.2s;
 }
-.Radio--icon-check i {
+.baobab-radio-icon--check i {
   -webkit-transform: rotate(-45deg) scale(0);
           transform: rotate(-45deg) scale(0);
 }
@@ -856,6 +856,7 @@
   padding: 60px 0 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  pointer-events: none;
 }
 .baobab-toast.top {
   -webkit-box-align: start;
@@ -893,9 +894,9 @@
           box-sizing: border-box;
 }
 .baobab-toast--main.onlyText {
-  width: 208px;
+  max-width: 208px;
   padding: 14px 0;
-  border-radius: 10px;
+  border-radius: 6px;
   text-align: center;
   word-wrap: break-word;
 }
