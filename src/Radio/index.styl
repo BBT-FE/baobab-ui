@@ -45,7 +45,11 @@
   border: 1px solid transparent;
 }
 
-.baobab-radio-icon--normal.disabled {
+.Radio--icon-normal i {
+  transform: rotate(-45deg) scale(0);
+}
+
+.Radio--icon-normal.disabled {
   background-color: #ccc;
 }
 
@@ -64,10 +68,10 @@
   border-bottom: 1px solid #fff;
   border-left: 1px solid #fff;
   transform: rotate(-45deg) scale(1);
-  transition  transform .2s;
+  transition: transform .2s;
 }
 
-.baobab-radio-icon--check i {
+.Radio--icon-check i {
   transform: rotate(-45deg) scale(0);
 }
 

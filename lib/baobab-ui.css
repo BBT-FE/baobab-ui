@@ -148,7 +148,11 @@
   background-color: #3e81f1;
   border: 1px solid transparent;
 }
-.baobab-radio-icon--normal.disabled {
+.Radio--icon-normal i {
+  -webkit-transform: rotate(-45deg) scale(0);
+          transform: rotate(-45deg) scale(0);
+}
+.Radio--icon-normal.disabled {
   background-color: #ccc;
 }
 .baobab-radio-icon--normal i {
@@ -174,7 +178,7 @@
   transition: transform 0.2s;
   transition: transform 0.2s, -webkit-transform 0.2s;
 }
-.baobab-radio-icon--check i {
+.Radio--icon-check i {
   -webkit-transform: rotate(-45deg) scale(0);
           transform: rotate(-45deg) scale(0);
 }

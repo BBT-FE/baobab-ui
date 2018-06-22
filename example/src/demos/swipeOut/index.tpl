@@ -10,4 +10,6 @@
       </div>
     </SwipeOutItem>
   </SwipeOut>
+
+  <Loadmore @reachBottom="loadmore" :visible="visible" desc="正在加载..."></Loadmore>
 </div>

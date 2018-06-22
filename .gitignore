@@ -60,3 +60,5 @@ typings/
 
 # editor
 .idea/
+# mac
+.DS_Store

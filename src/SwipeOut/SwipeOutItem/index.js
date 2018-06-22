@@ -1,6 +1,15 @@
 import create from './index.tpl'
 import './index.styl'
 
+function preDefault(e) {
+  if (e.cancelable) {
+    // 判断默认行为是否已经被禁用
+    if (!e.defaultPrevented) {
+      e.preventDefault()
+    }
+  }
+}
+
 const component = create({
   name: 'SwipeOutItem',
 
@@ -10,15 +19,16 @@ const component = create({
       translate: 0,
       startX: 0,
       oldTouches: null,
-      btnWidth: 0
+      btnWidth: 0,
+      moveX: 0
     }
   },
 
   computed: {
     itemStyle() {
       return {
-        transition: `all ${this.speed}ms`,
-        transform: `translate3d(${this.translate}px, 0, 0)`
+        transition: `all ${this.speed}ms ease`,
+        transform: `translateX(${this.translate}px)`
       }
     }
   },
@@ -36,9 +46,9 @@ const component = create({
 
     move(e) {
       let moveX = e.touches[0].pageX - this.oldTouches.pageX
+      this.moveX = moveX
       let moveY = e.touches[0].pageY - this.oldTouches.pageY
-
-      if (Math.abs(moveX) < Math.abs(moveY) || Math.abs(moveX) < 20 || Math.abs(moveY) > 30) return
+      if (Math.abs(moveX) < Math.abs(moveY) || Math.abs(moveX) < 20 || Math.abs(moveY) > 5) return
       e.preventDefault()
       this.$parent.$emit('resetItem', this)
       moveX = this.startX * 1 + moveX * 1
@@ -49,15 +59,21 @@ const component = create({
       } else if (moveX > 0) {
         moveX = 0
       }
+      document.addEventListener('touchmove', preDefault, { passive: false })
       this.translate = moveX
     },
 
     end() {
       // 自动布置
-      let moveX = -this.translate > 30 ? -this.btnWidth : 0
+      let moveX = -this.translate > 20 ? -this.btnWidth : 0
+      if (this.moveX > 0) {
+        moveX = 0
+      }
+
       // 滑动停止之前将speed置为0
       this.speed = 300
       this.translate = moveX
+      document.removeEventListener('touchmove', preDefault, { passive: false })
     },
 
     close() {
