@@ -8,6 +8,7 @@ import Loading from './Loading'
 import Loadmore from './Loadmore'
 import SwipeOut from './SwipeOut'
 import SwipeOutItem from './SwipeOut/SwipeOutItem'
+import pullRefresh from './pullRefresh'
 
 // 标签栏相关
 import TabBar from './TabBar'
@@ -66,7 +67,8 @@ const components = [
   Loading,
   Loadmore,
   SwipeOut,
-  SwipeOutItem
+  SwipeOutItem,
+  pullRefresh
 ]
 
 // install方法将所有组件全局注册

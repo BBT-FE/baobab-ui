@@ -20,7 +20,8 @@ import RadioExample from './src/demos/radio'
 import LoadingExample from './src/demos/loading'
 import LoadmoreExample from './src/demos/loadmore'
 import SwitcherExample from './src/demos/switcher'
-import swipeOut from './src/demos/swipeOut'
+import SwipeOut from './src/demos/swipeOut'
+import PullRefresh from './src/demos/pullRefresh'
 
 // 标签栏相关示例
 import TabBarExample from './src/demos/tabBar'
@@ -182,7 +183,13 @@ const routes = [
   // SlideOuter
   {
     path: '/swipeOut-Example',
-    component: swipeOut
+    component: SwipeOut
+  },
+
+  // pullRefresh
+  {
+    path: '/pullRefresh-Example',
+    component: PullRefresh
   }
 ]
 

@@ -1,4 +1,4 @@
-## Baobab-UI [中文文档](https://github.com/BBT-FE/Baobab-UI/blob/master/README_zh-CN.md)
+## Baobab-UI [中文](https://github.com/BBT-FE/Baobab-UI/blob/master/README_zh-CN.md)
 
 > 🚀  A lightweight, high quality component library based on Vue 2.x by BBT-FE https://BBT-FE.github.io/#/About
 
