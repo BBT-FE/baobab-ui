@@ -1,5 +1,5 @@
 <div>
-  <div class="backWrapper" v-if="!visiable">
+  <div class="backWrapper" v-if="!visiable && $route.path !== '/pullRefresh-Example'">
     <div class="backWrapper--main">
       <div @click="goHome">
         <i class="back--icon"></i>

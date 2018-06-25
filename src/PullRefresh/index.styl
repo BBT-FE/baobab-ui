@@ -1,0 +1,34 @@
+.baobab-pull-refresh--container {
+  height: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  transition: 300ms;
+}
+
+.baobab-pull-refresh--content {
+  margin-top: -50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #666;
+  border-bottom: 1px solid #eee;
+}
+
+.baobab-pull-refresh--loading {
+  animation: refreshLoading 1s linear infinite;
+}
+
+@keyframes refreshLoading {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.baobab-pull-refresh-icon--reverse {
+  transform: rotate(180deg);
+  transition: all .3s ease;
+}

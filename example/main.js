@@ -10,7 +10,7 @@ Vue.use(Baobab)
 // 解决移动端300ms延迟
 FastClick.attach(document.body)
 
-new Vue({
+window.app = new Vue({
   el: '#app',
   router,
   ...App
