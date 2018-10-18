@@ -1,7 +1,7 @@
 <div>
   <div class="backWrapper" v-if="!visiable && $route.path !== '/pullRefresh-Example'">
     <div class="backWrapper--main">
-      <div @click="goHome">
+      <div @click="goHome" class="arrow--back">
         <i class="back--icon"></i>
         <span class="back--btn">返回</span>
       </div>
