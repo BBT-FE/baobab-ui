@@ -10,12 +10,6 @@ export default create({
           onClick() {
             console.log(`${this.title}`)
           }
-        },
-        {
-          title: '我知道了!',
-          onClick() {
-            console.log(`${this.title}`)
-          }
         }
       ])
     },
