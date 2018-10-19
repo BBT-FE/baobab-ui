@@ -1,6 +1,6 @@
 {
   "name": "baobab-ui",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "BBT内部组件库-基于vue2.0的UI组件库",
   "main": "lib/baobab-ui.js",
   "directories": {
@@ -8,8 +8,8 @@
     "test": "tests"
   },
   "scripts": {
-    "start": "node ./example/server.js",
-    "build:demo": "rm -rf ./docs/demo/css && rm -rf ./docs/demo/js && rm -rf ./docs/demo/index.html && node example/build.js",
+    "start": "node ./example/scripts/server.js",
+    "build:demo": "rm -rf ./docs/demo/css && rm -rf ./docs/demo/js && rm -rf ./docs/demo/index.html && node example/scripts/build.js",
     "build": "rm -rf ./lib && node ./webpack.config.js",
     "lint": "eslint --ext .js,.vue src",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -w"

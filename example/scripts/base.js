@@ -5,14 +5,14 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const InlineManifestPlugin = require('inline-manifest-webpack-plugin')
 const WebpackChunkHash = require('webpack-chunk-hash')
 const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin')
-const version = require('../package.json').version
+const version = require('../../package.json').version
 const isProduction = process.env.NODE_ENV === 'production'
 const config = {
   context: __dirname,
 
   entry: {
     app: [
-      './main.js'
+      '../main.js'
     ],
 
     vendor: [
@@ -25,7 +25,7 @@ const config = {
 
   output: {
     filename: 'js/[name].[chunkhash].js',
-    path: path.resolve(__dirname, '../docs/demo')
+    path: path.resolve(__dirname, '../../docs/demo')
   },
 
   resolve: {
@@ -93,7 +93,7 @@ const config = {
     }),
 
     new HtmlWebpackPlugin({
-      template: './index.html',
+      template: '../index.html',
       version: 'v' + version
     }),
 
