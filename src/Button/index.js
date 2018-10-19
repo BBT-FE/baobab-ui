@@ -12,17 +12,17 @@ const component = create({
 
     height: {
       type: String,
-      default: '44px'
+      default: '45px'
     },
 
     radius: {
       type: String,
-      default: '2px'
+      default: '30px'
     },
 
     tintColor: {
       type: String,
-      default: '#3E81F1'
+      default: '#2068D1'
     },
 
     // spinnerBgColor
@@ -104,7 +104,7 @@ const component = create({
     },
 
     spinnerSize() {
-      const size = parseFloat(this.height) * 0.45
+      const size = parseFloat(this.height) * 0.5
       return size < 12 ? 12 : size
     }
   },
