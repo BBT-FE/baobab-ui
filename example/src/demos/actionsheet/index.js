@@ -46,7 +46,7 @@ export default create({
         ...options
       ]
       options = tempAry
-      this.$actionSheet.show('以下哪种人是你喜欢的？', options, false)
+      this.$actionSheet.show('以下哪种人是你喜欢的？', options, false, '关闭')
     }
   }
 })

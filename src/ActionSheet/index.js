@@ -24,7 +24,8 @@ const component = create({
       ],
       hideCancel: false,
       tintColor: '#333333',
-      zIndex: 5
+      zIndex: 5,
+      CancelBtnText: '取消'
     }
   },
 
@@ -35,9 +36,10 @@ const component = create({
       this.hideCancel = false
     },
 
-    show(title, options, hideCancel = false) { // 需要挂载到Vue原型上的方法
+    show(title, options, hideCancel = false, cancleBtnText = '取消') { // 需要挂载到Vue原型上的方法
       this.title = title
       this.hideCancel = hideCancel
+      this.cancleBtnText = cancleBtnText
       this.options = options.map(opt => {
         if (typeof opt === 'object') {
           return opt

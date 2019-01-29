@@ -18,7 +18,7 @@
         @click="hide"
         v-if="hideCancel == false"
       >
-        取消
+        {{ cancleBtnText }}
       </div>
     </div>
   </transition>
