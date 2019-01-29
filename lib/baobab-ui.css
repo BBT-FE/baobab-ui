@@ -878,7 +878,6 @@
 }
 .baobab-actionSheet--options {
   background-color: #fff;
-  margin-bottom: 10px;
   overflow: scroll;
   max-height: 300px;
   -webkit-overflow-scrolling: touch;
@@ -896,6 +895,7 @@
 }
 .baobab-actionSheet--cancel {
   background-color: #fff;
+  margin-top: 10px;
 }
 /*# sourceMappingURL=src/ActionSheet/index.css.map */.baobab-toast {
   position: fixed;
