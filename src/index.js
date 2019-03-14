@@ -71,7 +71,9 @@ const components = [
   pullRefresh
 ]
 
-// install方法将所有组件全局注册
+// vue的插件都应该有一个公共的install, 其中包含两个参数: 1. Vue, 2. Options, MyPlugin.install = function (Vue, options) {}
+// 所以开发的Vue插件应该导出一个insall方法
+
 export default {
   install(Vue) {
     components.forEach((component) => {
